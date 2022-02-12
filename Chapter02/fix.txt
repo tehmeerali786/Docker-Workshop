@@ -1,0 +1,7 @@
+# to fix debian questions
+ENV DEBIAN_FRONTEND noninteractive
+
+# Stop apache already runningo on ubuntu
+sudo /etc/init.d/apache2 stop
+sudo /etc/init.d/apache2 stop
+# From Terminal
