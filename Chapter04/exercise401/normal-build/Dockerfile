@@ -1,0 +1,7 @@
+FROM golang:1.16.14
+
+WORKDIR /myapp 
+COPY welcome.go .
+RUN go env -w GO111MODULE=off
+RUN go build -o welcome .
+ENTRYPOINT ["./welcome"]
