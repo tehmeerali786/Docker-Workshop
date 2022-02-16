@@ -5,3 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 sudo /etc/init.d/apache2 stop
 sudo /etc/init.d/apache2 stop
 # From Terminal
+
+# Docker already binded with 0.0.0.0:5000
+docker container ls
+docker rm -f <container_name>
+https://stackoverflow.com/questions/46176584/docker-bind-for-0-0-0-04000-failed-port-is-already-allocated
